@@ -1,0 +1,14 @@
+{
+    "type": "module",
+    "name": "pruebajs",
+    "version": "1.0.0",
+    "description": "Programación Avanzada en JavaScript",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "api": "node ./assets/js/apiController.js",
+      "clases": "node ./assets/js/classes.js"
+    },
+    "keywords": [],
+    "license": "ISC"
+  }
