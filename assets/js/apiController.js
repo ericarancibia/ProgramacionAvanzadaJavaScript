@@ -1,4 +1,4 @@
-let url = "http://localhost:5500/animales.json";
+let url = "animales.json";
 
 export const getAnimales = async () => {
   try {

@@ -29,10 +29,10 @@ const limpiarTagPreview = () => {
         instanciaAnimal = new Leon(
           formulario.animal,
           formulario.edad,
-          "http://localhost:5500/assets/imgs/" +
+          "assets/imgs/" +
             datosAnimales.animales[0].imagen,
           formulario.comentarios,
-          "http://localhost:5500/assets/sounds/" +
+          "assets/sounds/" +
             datosAnimales.animales[0].sonido
         );
         break;
@@ -40,10 +40,10 @@ const limpiarTagPreview = () => {
         instanciaAnimal = new Lobo(
           formulario.animal,
           formulario.edad,
-          "http://localhost:5500/assets/imgs/" +
+          "assets/imgs/" +
             datosAnimales.animales[1].imagen,
           formulario.comentarios,
-          "http://localhost:5500/assets/sounds/" +
+          "assets/sounds/" +
             datosAnimales.animales[1].sonido
         );
         break;
@@ -51,10 +51,10 @@ const limpiarTagPreview = () => {
         instanciaAnimal = new Oso(
           formulario.animal,
           formulario.edad,
-          "http://localhost:5500/assets/imgs/" +
+          "assets/imgs/" +
             datosAnimales.animales[2].imagen,
           formulario.comentarios,
-          "http://localhost:5500/assets/sounds/" +
+          "assets/sounds/" +
             datosAnimales.animales[2].sonido
         );
         break;
@@ -62,10 +62,10 @@ const limpiarTagPreview = () => {
         instanciaAnimal = new Serpiente(
           formulario.animal,
           formulario.edad,
-          "http://localhost:5500/assets/imgs/" +
+          "assets/imgs/" +
             datosAnimales.animales[3].imagen,
           formulario.comentarios,
-          "http://localhost:5500/assets/sounds/" +
+          "assets/sounds/" +
             datosAnimales.animales[3].sonido
         );
         break;
@@ -73,10 +73,10 @@ const limpiarTagPreview = () => {
         instanciaAnimal = new Aguila(
           formulario.animal,
           formulario.edad,
-          "http://localhost:5500/assets/imgs/" +
+          "assets/imgs/" +
             datosAnimales.animales[4].imagen,
           formulario.comentarios,
-          "http://localhost:5500/assets/sounds/" +
+          "assets/sounds/" +
             datosAnimales.animales[4].sonido
         );
         break;
@@ -120,13 +120,13 @@ const limpiarTagPreview = () => {
       card.classList.add("card", "m-2", "bg-light");
       card.setAttribute("id", "animalCard");
       card.innerHTML = ` 
-        <img src="http://127.0.0.1:5500/assets/imgs/${datosAnimalSeleccionado.imagen}" alt="${animalSeleccionado}">
-        <button class="btn btn-secondary play-sound" data-audio="http://127.0.0.1:5500/assets/sounds/${datosAnimalSeleccionado.sonido}"><i class="fa-solid fa-volume-high"></i></button>
+        <img src="assets/imgs/${datosAnimalSeleccionado.imagen}" alt="${animalSeleccionado}">
+        <button class="btn btn-secondary play-sound" data-audio="assets/sounds/${datosAnimalSeleccionado.sonido}"><i class="fa-solid fa-volume-high"></i></button>
       `;
       card.addEventListener("click", () => {
         const nombreAnimal = animalSeleccionado;
         const edadAnimal = edad.value;
-        const imagenAnimal = `http://127.0.0.1:5500/assets/imgs/${datosAnimalSeleccionado.imagen}`;
+        const imagenAnimal = `assets/imgs/${datosAnimalSeleccionado.imagen}`;
         const comentariosAnimal = comentarios.value;
         mostrarDetallesAnimal(
           nombreAnimal,
